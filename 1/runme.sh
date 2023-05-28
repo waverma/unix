@@ -1,4 +1,5 @@
 #!/bin/bash
+gcc myprogram.c -o myprogram
 bash createA.sh > fileA
 ./myprogram fileA fileB
 gzip -k fileA fileB
