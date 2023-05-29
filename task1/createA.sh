@@ -10,3 +10,7 @@ do
 echo -ne '\000'
 done
 echo -ne '\001'
+
+
+
+
