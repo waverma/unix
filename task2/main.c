@@ -11,6 +11,7 @@
 
 
 int lock_count;
+char *locked_filename;
 
 
 void throw_error(char *message)
@@ -54,6 +55,8 @@ void write_with_lock(char *filename)
 void loop(char *filename)
 {
 	char *lock_filename = strcat(filename, ".lck");
+	locked_filename = malloc(strlen(lock_filename) + 1);
+	strcpy(locked_filename, filename);
 	while (true) 
 	{
 		lock_file(lock_filename);
@@ -70,6 +73,7 @@ void sigint_handler(int sig)
 	snprintf(result_line, 100, "pid: %d, lock_count: %d\n", getpid(), lock_count);
 	write(fd, result_line, strlen(result_line));
 	close(fd);
+	remove(locked_filename);	
 	exit(0);
 }
 
@@ -81,7 +85,7 @@ void main(int argc, char *argv[])
 	bool start_loop = false;
 	do
 	{
-		next_option = getopt(argc, argv, "l:");
+		next_option = getopt(argc, argv, "l");
 		switch(next_option)
 		{
 			case 'l':
@@ -107,12 +111,10 @@ void main(int argc, char *argv[])
 	
 	if (start_loop)
 	{
-		throw_error("loop");
 		loop(filename);
 	}
 	else
 	{
-		throw_error("write_with_lock");
 		write_with_lock(filename);
 	}	
 }
