@@ -1,0 +1,48 @@
+  File: fileA
+  Size: 4194305   	Blocks: 8200       IO Block: 4096   regular file
+Device: 803h/2051d	Inode: 2768845     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/     max)   Gid: ( 1000/     max)
+Access: 2023-05-29 12:23:59.911994113 +0500
+Modify: 2023-05-29 12:23:59.863994854 +0500
+Change: 2023-05-29 12:23:59.863994854 +0500
+ Birth: 2023-05-29 12:23:43.424249035 +0500
+  File: fileB
+  Size: 4194305   	Blocks: 24         IO Block: 4096   regular file
+Device: 803h/2051d	Inode: 2768846     Links: 1
+Access: (0775/-rwxrwxr-x)  Uid: ( 1000/     max)   Gid: ( 1000/     max)
+Access: 2023-05-29 12:23:59.943993618 +0500
+Modify: 2023-05-29 12:23:59.919993989 +0500
+Change: 2023-05-29 12:23:59.919993989 +0500
+ Birth: 2023-05-29 12:23:59.911994113 +0500
+  File: fileC
+  Size: 4194305   	Blocks: 24         IO Block: 4096   regular file
+Device: 803h/2051d	Inode: 2768892     Links: 1
+Access: (0775/-rwxrwxr-x)  Uid: ( 1000/     max)   Gid: ( 1000/     max)
+Access: 2023-05-29 12:23:59.959993371 +0500
+Modify: 2023-05-29 12:23:59.987992939 +0500
+Change: 2023-05-29 12:23:59.987992939 +0500
+ Birth: 2023-05-29 12:23:59.959993371 +0500
+  File: fileD
+  Size: 4194305   	Blocks: 32         IO Block: 4096   regular file
+Device: 803h/2051d	Inode: 2768893     Links: 1
+Access: (0775/-rwxrwxr-x)  Uid: ( 1000/     max)   Gid: ( 1000/     max)
+Access: 2023-05-29 12:23:59.987992939 +0500
+Modify: 2023-05-29 12:24:00.015992506 +0500
+Change: 2023-05-29 12:24:00.015992506 +0500
+ Birth: 2023-05-29 12:23:59.987992939 +0500
+  File: fileA.gz
+  Size: 4111      	Blocks: 16         IO Block: 4096   regular file
+Device: 803h/2051d	Inode: 2768887     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/     max)   Gid: ( 1000/     max)
+Access: 2023-05-29 12:23:59.911994113 +0500
+Modify: 2023-05-29 12:23:59.863994854 +0500
+Change: 2023-05-29 12:23:59.931993804 +0500
+ Birth: 2023-05-29 12:23:59.919993989 +0500
+  File: fileB.gz
+  Size: 4111      	Blocks: 16         IO Block: 4096   regular file
+Device: 803h/2051d	Inode: 2768891     Links: 1
+Access: (0775/-rwxrwxr-x)  Uid: ( 1000/     max)   Gid: ( 1000/     max)
+Access: 2023-05-29 12:23:59.959993371 +0500
+Modify: 2023-05-29 12:23:59.919993989 +0500
+Change: 2023-05-29 12:23:59.959993371 +0500
+ Birth: 2023-05-29 12:23:59.943993618 +0500
